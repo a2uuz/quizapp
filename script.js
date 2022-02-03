@@ -1,9 +1,9 @@
-// 1. Create a multidimensional array to hold quiz questions and answers
+// 1. an object inside an array to hold quiz questions= "Q" and answers= "A" in lowercase
 const quiz = [
-    ['How many planets are in the Solar System?', '8'],
-    ['How many continents are there?', '7'],
-    ['How many legs does an insect have?', '6'],
-    ['What year was JavaScript created?', '1995']
+  { q: 'How many planets are in the Solar System?', a: '8' },
+  { q: 'How many continents are there?', a: '7' },
+  { q: 'How many legs does an insect have?', a: '6' },
+  { q: 'What year was JavaScript created?', a: '1995' }
 ];
 
 // 2. Store the number of questions answered correctly 
@@ -21,8 +21,8 @@ let wrong = [];
         answered questions increments by 1
 */
 for (let i = 0; i < quiz.length; i++) {
-    let question = quiz[i][0];
-    let answer = quiz[i][1];
+    let question = quiz[i].q;
+    let answer = quiz[i].a;
     let response = prompt(question);
 
     if (response === answer) {
