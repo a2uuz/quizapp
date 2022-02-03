@@ -7,11 +7,6 @@ body {
   font-family: "Gotham Rounded A", "Gotham Rounded B", "Gotham Rounded", "Helvetica Neue", Helvetica, Arial, sans-serif;
   padding-top: 1em;
   background-color: #42b4d6;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  height: 100vh;
 }
 
 main {
@@ -28,10 +23,9 @@ h1 {
   text-shadow: 0 2px 0 rgba(0,0,0, 0.1);
 }
 
-h3 {
-  
-  color: black;
-
+h2 {
+  font-size: 2.5em;
+  font-weight: normal;
 }
 
 main p {
